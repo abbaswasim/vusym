@@ -1,2 +1,2 @@
-# watchcat
-Simplest filesystem watch dog (or shall I say watch cat)
+# CMake Template
+Simplest cmake C++ project template that can get you started faster
