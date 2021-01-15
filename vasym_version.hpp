@@ -1,4 +1,4 @@
-// WatchCat Source Code
+// VaSym Source Code
 // Wasim Abbas
 // http://www.waZim.com
 // Copyright (c) 2020
@@ -27,8 +27,8 @@
 
 #include <string>
 
-std::string watchcat_version();
-unsigned    watchcat_version_major();
-unsigned    watchcat_version_minor();
-unsigned    watchcat_version_patch();
-unsigned    watchcat_version_tweak();
+std::string vasym_version();
+unsigned    vasym_version_major();
+unsigned    vasym_version_minor();
+unsigned    vasym_version_patch();
+unsigned    vasym_version_tweak();
