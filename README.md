@@ -1,2 +1,3 @@
-# CMake Template
-Simplest cmake C++ project template that can get you started faster
+# Vulkan Symbol loader
+
+Use this to generate vulkan symbols from latest vulkan headers
