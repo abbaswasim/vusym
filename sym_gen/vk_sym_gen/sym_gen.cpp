@@ -510,7 +510,8 @@ int main(int argc, const char **argv)
 	}
 	{
 		std::fstream header{"vusym.cpp", std::ios::out};
-		header << "#include \"vusym.hpp\"\n\n";
+		header << "#include \"vusym.hpp\"\n";
+		header << "#include <cassert>\n\n";
 
 		// Need to split this between real_funcs, global funcs, instance funcs and device funcs
 		// After instance funcs start multi struct
