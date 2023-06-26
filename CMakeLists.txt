@@ -43,6 +43,12 @@ configure_file(${VUSYM_SOURCE_DIR}/vusym_version.cpp.in vusym_version.cpp @ONLY)
 add_library(vusym_version STATIC ${CMAKE_CURRENT_BINARY_DIR}/vusym_version.cpp)
 target_include_directories(vusym_version PUBLIC ${CMAKE_CURRENT_LIST_DIR})
 
+# Add vulkan
+add_library(vulkan_headers INTERFACE)
+set(VULKAN_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/thirdparty/vulkan/include)
+target_sources(vulkan_headers INTERFACE ${VULKAN_INCLUDE_DIR}/vulkan/vulkan.h)
+target_include_directories(vulkan_headers INTERFACE ${VULKAN_INCLUDE_DIR})
+
 set(VUSYM_HEADERS
   ${VUSYM_SOURCE_DIR}/vusym.hpp)
 
@@ -76,6 +82,6 @@ target_include_directories(${VUSYM_NAME} PRIVATE ${VUSYM_ROOT_DIR})
 set(VUSYM_REQUIRED_LIBRARIES
   vusym_version)
 
-target_link_libraries(${VUSYM_NAME} PRIVATE ${VUSYM_REQUIRED_LIBRARIES})
+target_link_libraries(${VUSYM_NAME} PRIVATE ${VUSYM_REQUIRED_LIBRARIES} vulkan_headers)
 
 build_options(${VUSYM_NAME}) # Set common build options

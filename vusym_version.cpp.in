@@ -1,4 +1,4 @@
-// VaSym Source Code
+// VuSym Source Code
 // Wasim Abbas
 // http://www.waZim.com
 // Copyright (c) 2020
@@ -23,29 +23,29 @@
 //
 // Version: 1.0.0
 
-#include "vasym_version.hpp"
+#include "vusym_version.hpp"
 
-std::string vasym_version()
+std::string vuym_version()
 {
-	return "@VaSym_VERSION@";
+	return "@VuSym_VERSION@";
 }
 
-unsigned vasym_version_major()
+unsigned vuym_version_major()
 {
-	return @VaSym_VERSION_MAJOR@;
+	return @VuSym_VERSION_MAJOR@;
 }
 
-unsigned vasym_version_minor()
+unsigned vuym_version_minor()
 {
-	return @VaSym_VERSION_MINOR@+0;
+	return @VuSym_VERSION_MINOR@+0;
 }
 
-unsigned vasym_version_patch()
+unsigned vuym_version_patch()
 {
-	return @VaSym_VERSION_PATCH@+0;
+	return @VuSym_VERSION_PATCH@+0;
 }
 
-unsigned vasym_version_tweak()
+unsigned vuym_version_tweak()
 {
-	return @VaSym_VERSION_TWEAK@+0;
+	return @VuSym_VERSION_TWEAK@+0;
 }

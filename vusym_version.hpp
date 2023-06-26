@@ -27,8 +27,8 @@
 
 #include <string>
 
-std::string vasym_version();
-unsigned    vasym_version_major();
-unsigned    vasym_version_minor();
-unsigned    vasym_version_patch();
-unsigned    vasym_version_tweak();
+std::string vusym_version();
+unsigned    vusym_version_major();
+unsigned    vusym_version_minor();
+unsigned    vusym_version_patch();
+unsigned    vusym_version_tweak();
