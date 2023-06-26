@@ -1,11 +1,10 @@
 #pragma once
-
 #include <dlfcn.h>
 #include <iostream>
 #include <string>
 #include <vector>
 
-#define VUSYM_SUPPORT_MULTIPLE_VULKAN_DEVICES 1
+// #define VUSYM_SUPPORT_MULTIPLE_VULKAN_DEVICES 1
 
 #define VK_ENABLE_BETA_EXTENSIONS        // FIXME::
 

@@ -638,7 +638,8 @@ VkBool32 vusym_load_proc_addr_symbols()
 	vkGetInstanceProcAddr = reinterpret_cast<PFN_vkGetInstanceProcAddr>(dlsym(vulkan_loader, "vkGetInstanceProcAddr"));
 	vkGetDeviceProcAddr   = reinterpret_cast<PFN_vkGetDeviceProcAddr>(dlsym(vulkan_loader, "vkGetDeviceProcAddr"));
 
-	dlclose(vulkan_loader);
+	// TODO: Find out where can I dlclose the loader
+	// dlclose(vulkan_loader);
 
 	return VK_TRUE;
 }
