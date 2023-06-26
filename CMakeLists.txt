@@ -78,6 +78,7 @@ generate_export_header(${VUSYM_NAME}
 target_include_directories(${VUSYM_NAME} PUBLIC ${CMAKE_CURRENT_BINARY_DIR})
 target_include_directories(${VUSYM_NAME} PRIVATE ${VUSYM_SOURCE_DIR})
 target_include_directories(${VUSYM_NAME} PRIVATE ${VUSYM_ROOT_DIR})
+target_include_directories(${VUSYM_NAME} PUBLIC ${VULKAN_INCLUDE_DIR})
 
 set(VUSYM_REQUIRED_LIBRARIES
   vusym_version)
