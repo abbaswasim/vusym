@@ -34,7 +34,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED true)
 set(CMAKE_CXX_EXTENSIONS false)
 
-function(build_options target_name)
+function(vusym_build_options target_name)
   if (CMAKE_BUILD_TYPE MATCHES "Debug")
 	target_compile_definitions(${target_name} PUBLIC RORDEBUG)
 	set(CMAKE_CXX_FLAGS_DEBUG "-O0 -g")
@@ -59,4 +59,4 @@ function(build_options target_name)
 	-Wshadow
 	-Wfloat-equal)
 
-endfunction(build_options)
+endfunction(vusym_build_options)

@@ -85,4 +85,4 @@ set(VUSYM_REQUIRED_LIBRARIES
 
 target_link_libraries(${VUSYM_NAME} PRIVATE ${VUSYM_REQUIRED_LIBRARIES} vulkan_headers)
 
-build_options(${VUSYM_NAME}) # Set common build options
+vusym_build_options(${VUSYM_NAME}) # Set common build options
