@@ -3,6 +3,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <array>
 
 // #define VUSYM_SUPPORT_MULTIPLE_VULKAN_DEVICES 1
 

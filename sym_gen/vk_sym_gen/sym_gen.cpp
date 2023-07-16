@@ -106,6 +106,7 @@ static const std::string main_header{R"header(#pragma once
 #include <iostream>
 #include <string>
 #include <vector>
+#include <array>
 
 // #define VUSYM_SUPPORT_MULTIPLE_VULKAN_DEVICES 1
 
@@ -226,9 +227,9 @@ VkBool32 vusym_load_proc_addr_symbols()
 {
 	std::string loader_lib{"libvulkan"};
 #if defined(__APPLE__)
-	std::vector<std::string> versions{".dylib", ".1.dylib"};
+	std::array<std::string, 2> versions{".dylib", ".1.dylib"};
 #elif defined(__linux__) || defined(__ANDROID__)
-	std::vector<std::string> versions{".so", "so.1"};
+	std::array<std::string, 2> versions{".so", "so.1"};
 #else
 #	error "Platform not supported at the moment."
 #endif
