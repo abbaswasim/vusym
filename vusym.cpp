@@ -1,4 +1,5 @@
 #include "vusym.hpp"
+#include <cassert>
 
 PFN_vkCreateInstance                                                  real_vkCreateInstance                                             = nullptr;
 PFN_vkCreateDevice                                                    real_vkCreateDevice                                               = nullptr;
